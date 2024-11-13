@@ -1,0 +1,5 @@
+n=int(input())
+for _ in range(n):
+    t,r = map(int,input().split())
+    res = t-r
+    print(res+1)
