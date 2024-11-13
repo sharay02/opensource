@@ -1,0 +1,6 @@
+n=int(input())
+for _ in range (n):
+    t,p = map(int,input().split())
+    num = t//10
+    r=p*num
+    print(r)
