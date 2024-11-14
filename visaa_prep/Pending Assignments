@@ -1,0 +1,7 @@
+x,y,z = map(int,input().split())
+time = x * y
+total = z * 24 * 60
+if time <= total :
+    print("YES")
+else:
+    print("NO")
