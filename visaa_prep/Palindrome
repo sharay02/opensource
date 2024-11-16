@@ -1,0 +1,7 @@
+def pali(s):
+    return s == s[::-1]
+s=input()
+if pali(s):
+    print("TRUE")
+else:
+    print("FALSE")
