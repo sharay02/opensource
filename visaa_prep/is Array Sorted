@@ -1,0 +1,10 @@
+def isi(arr):
+    return all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1))
+
+
+n = int(input())
+arr = list(map(int, input().split()))
+if isi(arr) :
+    print("true")
+else:
+    print("false")
