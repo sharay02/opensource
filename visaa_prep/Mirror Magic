@@ -1,0 +1,10 @@
+def mirror_image(matrix):
+    return [row[::-1] for row in matrix]
+
+
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+
+
+for row in mirror_image(matrix):
+    print(*row)
