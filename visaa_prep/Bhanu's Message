@@ -1,0 +1,9 @@
+def validate_number(num):
+    if num[0] == '+':
+        country_code_len = len(num.split()[0][1:])
+        return country_code_len == 2 and len(num.replace('+', '').replace(' ', '')) == 12 and num.replace('+', '').replace(' ', '').isdigit() and sum(int(d) for d in num.replace('+', '').replace(' ', '')) > 0
+    else:
+        return len(num) == 10 and num.isdigit() and sum(int(d) for d in num) > 0
+
+num = input()
+print("Correct" if validate_number(num) else "Incorrect")
