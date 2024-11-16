@@ -1,0 +1,12 @@
+
+def single_number(nums):
+    result = 0
+    for num in nums:
+        result ^= num
+    return result
+
+n = int(input())
+nums = list(map(int, input().split()))
+
+
+print(single_number(nums))
